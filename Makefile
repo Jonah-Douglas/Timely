@@ -5,6 +5,9 @@ JC = javac
 	$(JC) $(JFLAGS) $*.java
 
 CLASSES = \
+	Route.java \
+	Driver.java \
+	Station.java \
 	ContractCompany.java \
 	LoadBalancer.java
 

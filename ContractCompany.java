@@ -1,10 +1,13 @@
+// FedEx Contract Company                                  |   Hammer Delivery Inc.
+//     Company ID: ########                                |   12345678
+//     FedEx Stations: #### (List)                         |   0982/ Null/ Null...
 import java.util.*;
 
 public class ContractCompany {
     String contractorName;
     String contractCompanyName;
     int contractCompanyNumber;
-    //Station[] stations;
+    Station[] stations;
 
 
 //Constructor

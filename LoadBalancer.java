@@ -9,6 +9,7 @@ public class LoadBalancer {
         Scanner scanner = new Scanner(System.in);
 
         welcomeMessage();
+
         System.out.println("Contractor Name: ");
         contractorName = scanner.nextLine();
         System.out.println("\nCompany Name: ");
@@ -21,7 +22,7 @@ public class LoadBalancer {
         scanner.close();
     }
 
-    public static void welcomeMessage() {
+    private static void welcomeMessage() {
         System.out.println("\n\n-----------------------------------------------FedEx Load Balancer------------------------"  +
             "-----------------\n"                                                                                            +
             "Created by Jonah Douglas\n\n"                                                                                   +
