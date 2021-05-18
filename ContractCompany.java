@@ -7,7 +7,7 @@ public class ContractCompany {
     String contractorName;
     String contractCompanyName;
     int contractCompanyNumber;
-    Station[] stations;
+    ArrayList<Station> stations;
 
 
 //Constructor
@@ -15,5 +15,6 @@ public class ContractCompany {
         contractorName = cName;
         contractCompanyName = companyName;
         contractCompanyNumber = cNumber;
+        stations = null;
     }
 }

@@ -30,3 +30,5 @@ FedEx Contract Company                                  |   Hammer Delivery Inc.
             average package count (store totals per day to create a working history)    |   120
             total package count history                 |   115 M, 138 T, 104 W
             truck number on route                       |   713560
+
+The estimates are stored in a 2d float array which is indexed via a seperate 1d Road array that contains road name, zip code and how often the road is delivered to which is used to optimize the 2d array.

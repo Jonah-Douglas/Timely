@@ -10,6 +10,7 @@ public class Driver {
     int fedexID;
     int gasCardNumber;
     int truckNumber;
+    Route[] routes;
 
     //FedEx Driver Stats
     float averageTotalTimeAtStation;

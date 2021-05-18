@@ -2,6 +2,9 @@ import java.util.*;
 
 public class LoadBalancer {
     public static void main(String[] args) {
+        Road[] roads;               //indices correspond to roadMap indices so roadMap only contains time from one road to another
+        float[][] roadMap;          //2d array that contains approximate time for driver to go from a given road to another
+
         ContractCompany contractCompany;
         String contractorName;
         String contractCompanyName;
@@ -18,6 +21,14 @@ public class LoadBalancer {
         contractCompanyNumber = scanner.nextInt();
 
         contractCompany = new ContractCompany(contractorName, contractCompanyName, contractCompanyNumber);
+
+        //connect Stations to contract company and fill in station data
+        contractCompany.stations = new ArrayList<Station>();
+        Station station = new Station(996, "1100 South Burlington Dr.");
+        contractCompany.stations.add(station);
+
+        //TODO: create company manually to ensure program built correctly and accessors are setup properly
+            //also need to ensure proper access via public and private methods
 
         scanner.close();
     }
