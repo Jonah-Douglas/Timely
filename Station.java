@@ -7,7 +7,7 @@ import java.util.*;
 public class Station {
     int stationNumber;
     String stationAddress;
-    Driver[] drivers;
+    ArrayList<Driver> drivers;
     //HashMap<String, Integer> test;        //**fully connected graph
     //Route[] routes;                       **Should probably be associated with drivers instead of Station
 
@@ -16,5 +16,6 @@ public class Station {
     public Station(int sNumber, String sAddress) {
         stationNumber = sNumber;
         stationAddress = sAddress;
+        drivers = null;
     }
 }

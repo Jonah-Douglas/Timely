@@ -2,8 +2,8 @@ import java.util.*;
 
 public class LoadBalancer {
     public static void main(String[] args) {
-        Road[] roads;               //indices correspond to roadMap indices so roadMap only contains time from one road to another
-        float[][] roadMap;          //2d array that contains approximate time for driver to go from a given road to another
+        //Road[] roads;               //indices correspond to roadMap indices so roadMap only contains time from one road to another
+        //float[][] roadMap;          //2d array that contains approximate time for driver to go from a given road to another
 
         ContractCompany contractCompany;
         String contractorName;
@@ -26,6 +26,10 @@ public class LoadBalancer {
         contractCompany.stations = new ArrayList<Station>();
         Station station = new Station(996, "1100 South Burlington Dr.");
         contractCompany.stations.add(station);
+        System.out.println(contractCompany.stations.get(0).stationAddress);             //acesses station address in Station.java
+        Driver newDriver = new Driver("Jonah",18.00,8114646,18313,711464);
+        contractCompany.stations.get(0).drivers.add(newDriver);
+        System.out.println(contractCompany.stations.get(0).drivers.get(0).driverName);
 
         //TODO: create company manually to ensure program built correctly and accessors are setup properly
             //also need to ensure proper access via public and private methods

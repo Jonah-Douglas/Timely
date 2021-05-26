@@ -6,13 +6,23 @@ import java.util.*;
 public class Driver {
     //FedEx Driver Details
     String driverName;
-    float salary;
+    double salary;
     int fedexID;
     int gasCardNumber;
     int truckNumber;
-    Route[] routes;
+    ArrayList<Route> routes;
 
     //FedEx Driver Stats
     float averageTotalTimeAtStation;
     int flagTallyCount;
+
+    //Constructor
+    public Driver(String name, double sal, int ID, int gasCard, int truckNum) {
+        driverName = name;
+        salary = sal;
+        fedexID = ID;
+        gasCardNumber = gasCard;
+        truckNumber = truckNum;
+        routes = null;
+    }
 }
