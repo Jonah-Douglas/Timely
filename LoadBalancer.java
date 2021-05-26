@@ -23,7 +23,6 @@ public class LoadBalancer {
         contractCompany = new ContractCompany(contractorName, contractCompanyName, contractCompanyNumber);
 
         //connect Stations to contract company and fill in station data
-        contractCompany.stations = new ArrayList<Station>();
         Station station = new Station(996, "1100 South Burlington Dr.");
         contractCompany.stations.add(station);
         System.out.println(contractCompany.stations.get(0).stationAddress);             //acesses station address in Station.java

@@ -23,6 +23,6 @@ public class Driver {
         fedexID = ID;
         gasCardNumber = gasCard;
         truckNumber = truckNum;
-        routes = null;
+        routes = new ArrayList<Route>();
     }
 }

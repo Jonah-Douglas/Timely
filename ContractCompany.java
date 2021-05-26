@@ -15,6 +15,6 @@ public class ContractCompany {
         contractorName = cName;
         contractCompanyName = companyName;
         contractCompanyNumber = cNumber;
-        stations = null;
+        stations = new ArrayList<Station>();
     }
 }

@@ -16,6 +16,6 @@ public class Station {
     public Station(int sNumber, String sAddress) {
         stationNumber = sNumber;
         stationAddress = sAddress;
-        drivers = null;
+        drivers = new ArrayList<Driver>();
     }
 }
