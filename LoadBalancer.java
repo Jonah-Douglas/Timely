@@ -1,10 +1,9 @@
 import java.util.*;
+import java.io.IOException;
+import java.io.FileNotFoundException;
 
 public class LoadBalancer {
-    public static void main(String[] args) {
-        //Road[] roads;               //indices correspond to roadMap indices so roadMap only contains time from one road to another
-        //float[][] roadMap;          //2d array that contains approximate time for driver to go from a given road to another
-
+    public static void main(String[] args) throws IOException, FileNotFoundException {
         ContractCompany contractCompany;
         String contractorName;
         String contractCompanyName;
@@ -12,7 +11,9 @@ public class LoadBalancer {
         Scanner scanner = new Scanner(System.in);
 
         welcomeMessage();
+        CSVParser.parseFileFromWeb();
 
+        /*
         System.out.println("Contractor Name: ");
         contractorName = scanner.nextLine();
         System.out.println("\nCompany Name: ");
@@ -28,9 +29,13 @@ public class LoadBalancer {
         System.out.println(contractCompany.stations.get(0).stationAddress);             //acesses station address in Station.java
         Driver newDriver = new Driver("Jonah",18.00,8114646,18313,711464);
         contractCompany.stations.get(0).drivers.add(newDriver);
-        System.out.println(contractCompany.stations.get(0).drivers.get(0).driverName);
+        System.out.println(contractCompany.stations.get(0).drivers.get(0).driverName);  //access drivers name in Driver.java
+        Route route = new Route(452,540.00,3.14,46.32,113,711560);
+        contractCompany.stations.get(0).drivers.get(0).routes.add(route);
+        System.out.println(contractCompany.stations.get(0).drivers.get(0).routes.get(0).averageTotalTime); //access avestoptime in Route
+        */
 
-        //TODO: create company manually to ensure program built correctly and accessors are setup properly
+        //TODO: parse FedEx CSV file and create 2d array with aossicated road array
             //also need to ensure proper access via public and private methods
 
         scanner.close();

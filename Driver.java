@@ -3,6 +3,7 @@
 //             flag tally count                            |   0
 import java.util.*;
 
+
 public class Driver {
     //FedEx Driver Details
     String driverName;
@@ -13,7 +14,7 @@ public class Driver {
     ArrayList<Route> routes;
 
     //FedEx Driver Stats
-    float averageTotalTimeAtStation;
+    double averageTotalTimeAtStation;
     int flagTallyCount;
 
     //Constructor

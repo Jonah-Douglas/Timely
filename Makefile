@@ -9,6 +9,7 @@ CLASSES = \
 	Driver.java \
 	Station.java \
 	ContractCompany.java \
+	CSVParser.java \
 	LoadBalancer.java
 
 default: classes

@@ -9,13 +9,25 @@
 //             truck number on route                       |   713560
 import java.util.*;
 
+
 public class Route {
     int routeID;
     String[] driversOnRoute;
-    float averageTotalTime;
-    float averageStopTime;
-    int timeToRoute;
+    double averageTotalTime;
+    double averageStopTime;
+    double timeToRoute;
     int averagePackageCount;
     int[] packageCountHistory;
     int truckNumberOnRoute;
+
+    public Route(int rid, double averagetotaltme, double averagestoptime, double timetoroute, int averagepackageCount, int trucknumberonroute) {
+        routeID = rid;
+        driversOnRoute = new String[5];
+        averageTotalTime = averagetotaltme;
+        averageStopTime = averagestoptime;
+        timeToRoute = timetoroute;
+        averagePackageCount = averagepackageCount;
+        packageCountHistory = new int[1000];
+        truckNumberOnRoute = trucknumberonroute;
+    }
 }
