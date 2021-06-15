@@ -9,14 +9,17 @@ public class Station {
     int stationNumber;
     String stationAddress;
     ArrayList<Driver> drivers;
-    //HashMap<String, Integer> test;        //**fully connected graph
-    //Route[] routes;                       **Should probably be associated with drivers instead of Station
 
+    List<Road> roads;               //indices correspond to roadMap indices so roadMap only contains time from one road to another
+    double[][] roadMap;             //2d array that contains approximate time for driver to go from a given road to another
 
 //Constructor
     public Station(int sNumber, String sAddress) {
         stationNumber = sNumber;
         stationAddress = sAddress;
         drivers = new ArrayList<Driver>();
+        
+        roads = Arrays.asList(new Road[100]);
+        roadMap = new double[100][100];
     }
 }

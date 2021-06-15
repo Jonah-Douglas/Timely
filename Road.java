@@ -5,7 +5,7 @@ public class Road {
 
     public Road(String roadname, int roadzipcode) {
         roadName = roadname;
-        roadAppearanceTally = 0;
+        roadAppearanceTally = 1;
         roadZipCode = roadzipcode;
     }
 }
